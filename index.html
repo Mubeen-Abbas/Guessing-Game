@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Guessing Game</title>
+  </head>
+  <body>
+    <section>
+      <div class="main_index">
+        <h1 class="heading_index">Guessing Game</h1>
+        <button onclick="restart()">Start/Restart</button>
+        <button onclick="reset()">Reset</button>
+        <h2 class="question_mark">?</h2>
+      </div>
+    </section>
+    <section class="bottom_index">
+      <div class="bottom_left_index">
+        <input
+          type="number"
+          placeholder="Enter any number"
+          class="input_index"
+        />
+        <button onclick="submit()" class="submit_index">Submit</button>
+      </div>
+      <div class="bottom_right_index">
+        <h2>
+          Success:
+          <span class="success">_____</span>
+        </h2>
+
+        <h2>Score:<span class="score">100</span></h2>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
