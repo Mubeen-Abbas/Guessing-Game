@@ -4,6 +4,7 @@ let score = document.querySelector(".score");
 let score_user = 100;
 let input_index = document.querySelector(".input_index");
 let question_mark = document.querySelector(".question_mark");
+let submit_index = document.querySelector(".submit_index");
 // let score_user_sub = score_user - 10;
 // let score_user_add = score_user + 10;
 let random_number = (min, max) =>
@@ -22,7 +23,6 @@ function submit() {
   if (user_value == guessing_number) {
     success.textContent = "Congratulations! You guessed the correct number.";
     question_mark.textContent = guessing_number;
-    score_user += 10;
   } else if (user_value > guessing_number) {
     success.textContent = "Too High";
     score_user -= 10;
@@ -35,9 +35,8 @@ function submit() {
   score.textContent = score_user;
   if (score_user == 0) {
     success.textContent = "You lost.Click the reset button for playing ";
-  }
-  if (score_user == 200) {
-    success.textContent = "You won.Click the reset button for playing ";
+    submit_index.style.display = "none";
+    question_mark.textContent = guessing_number;
   }
 }
 function reset() {
