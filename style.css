@@ -36,11 +36,9 @@
   gap: 5px;
 }
 .start {
-  width: fit-content;
   background-color: lightcoral;
 }
 .reset {
-  width: fit-content;
   background-color: lightsalmon;
 }
 .bottom_index {
