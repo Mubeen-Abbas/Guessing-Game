@@ -36,9 +36,11 @@
   gap: 5px;
 }
 .start {
+  width:auto
   background-color: lightcoral;
 }
 .reset {
+  width:auto
   background-color: lightsalmon;
 }
 .bottom_index {
