@@ -36,11 +36,11 @@
   gap: 5px;
 }
 .start {
-  width:auto
+  width: fit-content;
   background-color: lightcoral;
 }
 .reset {
-  width:auto
+  width: fit-content;
   background-color: lightsalmon;
 }
 .bottom_index {
