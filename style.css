@@ -35,6 +35,14 @@
   flex-direction: column;
   gap: 5px;
 }
+.start {
+  width: 5%;
+  background-color: lightcoral;
+}
+.reset {
+  width: 4%;
+  background-color: lightsalmon;
+}
 .bottom_index {
   display: flex;
 }
