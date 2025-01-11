@@ -1,6 +1,7 @@
 * {
   margin: 0px;
 }
+/* Main game */
 .main_index {
   background-color: burlywood;
   height: 50vh;
@@ -36,9 +37,18 @@
   gap: 5px;
 }
 .start {
+  width: fit-content;
   background-color: lightcoral;
 }
 .reset {
+  background-color: lightsalmon;
+}
+.start_sub {
+  display: none;
+  background-color: lightcoral;
+}
+.reset_sub {
+  display: none;
   background-color: lightsalmon;
 }
 .bottom_index {
@@ -52,6 +62,28 @@
   align-items: center;
   flex-direction: column;
 }
+/* main Game ends here */
+/* instruct starts here */
+.heading_instruct {
+  background-color: cadetblue;
+  border: black 3px solid;
+  text-align: center;
+  padding: 2%;
+  height: 5vh;
+}
+.content_instruct {
+  background-color: lightseagreen;
+  height: 89.5vh;
+}
+.button_instruct {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+/* instruct ends here */
 @media only screen and (max-width: 768px) {
   .bottom_index {
     display: flex;
@@ -59,13 +91,46 @@
     width: 100%;
     height: 50vh;
   }
-  .top_index {
-    height: 80%;
+  .main_index {
+    height: 20vh;
+    flex-direction: row;
+  }
+  .heading_index {
+    padding: 5%;
+  }
+  .bottom_index {
+    height: 80vh;
   }
   .bottom_left_index {
     width: 100%;
+    height: 50%;
   }
   .bottom_right_index {
     width: 100%;
+    height: 30vh;
+  }
+  .question_mark {
+    position: static;
+    margin-right: 5%;
+  }
+  .start {
+    display: none;
+  }
+  .reset {
+    display: none;
+  }
+  .start_sub {
+    display: block;
+    height: 10vh;
+    width: 50%;
+  }
+  .reset_sub {
+    display: block;
+    height: 10vh;
+    width: 50%;
+  }
+  .lastest {
+    display: flex;
+    flex-direction: row;
   }
 }
