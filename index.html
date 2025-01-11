@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Guessing Game</title>
-    <link rel="icon" href="pngegg.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro of Guessing Game</title>
   </head>
   <body>
-    <section class="top_index">
-      <div class="main_index">
-        <h1 class="heading_index">Guessing Game</h1>
-        <button onclick="restart()" class="start">Start</button>
-        <button onclick="reset()" class="reset">Reset</button>
-        <h2 class="question_mark">?</h2>
+    <section class="main_instruct">
+      <div class="heading_instruct">
+        <h1>Welcome To Guessing Game</h1>
       </div>
-    </section>
-    <section class="bottom_index">
-      <div class="bottom_left_index">
-        <input
-          type="number"
-          placeholder="Enter any number"
-          class="input_index"
-        />
-        <button onclick="submit()" class="submit_index">Submit</button>
-      </div>
-      <div class="bottom_right_index">
-        <h2>
-          Success:
-          <span class="success">_____</span>
-        </h2>
+      <div class="content_instruct">
+        <ol>
+          <h2>ome rules of playing this Guessing Game are as follows:</h2>
 
-        <h2>Score:<span class="score">100</span></h2>
+          <h3>
+          <li>
+              A random number would be generated on clicking the start button
+         </h3>
+          </li>
+          <h3>
+          <li>You have 10 tries to guess the number</li></h3>
+          <h3>
+          <li>the points will be deducted on each wrong try</li></h3>
+          <h3>
+          <li>Click on the start button to start the game</li></h3>
+
+        </ol>
+        <a href="game.html" class="button_instruct"
+          ><button>Click to start the game</button></a
+        >
       </div>
     </section>
-    <script src="script.js"></script>
   </body>
 </html>
