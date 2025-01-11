@@ -1,12 +1,10 @@
 let success = document.querySelector(".success");
 let user_guess = document.querySelector(".input_index");
 let score = document.querySelector(".score");
+let start = document.querySelector(".start");
 let score_user = 100;
-let input_index = document.querySelector(".input_index");
 let question_mark = document.querySelector(".question_mark");
 let submit_index = document.querySelector(".submit_index");
-// let score_user_sub = score_user - 10;
-// let score_user_add = score_user + 10;
 let random_number = (min, max) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
 let guessing_number;
@@ -19,7 +17,8 @@ function restart() {
 
 function submit() {
   let user_value = user_guess.value;
-
+  start.textContent = "Restart";
+  console.log(guessing_number);
   if (user_value == guessing_number) {
     success.textContent = "Congratulations! You guessed the correct number.";
     question_mark.textContent = guessing_number;
