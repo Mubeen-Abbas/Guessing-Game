@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guessing Game</title>
+    <link rel="icon" href="pngegg.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="top_index">
+      <div class="main_index">
+        <h1 class="heading_index">Guessing Game</h1>
+        <button onclick="restart()" class="start">Start</button>
+        <button onclick="reset()" class="reset">Reset</button>
+        <h2 class="question_mark">?</h2>
+      </div>
+    </section>
+    <section class="bottom_index">
+      <div class="bottom_left_index">
+        <input
+          type="number"
+          placeholder="Enter any number"
+          class="input_index"
+        />
+        <button onclick="submit()" class="submit_index">Submit</button>
+      </div>
+      <div class="bottom_right_index">
+        <h2>
+          Success:
+          <span class="success">_____</span>
+        </h2>
+
+        <h2>Score:<span class="score">100</span></h2>
+      </div>
+      <div class="lastest">
+        <button onclick="restart()" class="start_sub">Start</button>
+        <button onclick="reset()" class="reset_sub">Reset</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
