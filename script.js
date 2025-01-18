@@ -15,8 +15,8 @@ let random_number = (min, max) =>
 let guessing_number;
 
 function restart() {
+  success.textContent = "Your answer's frequency will show here";
   guessing_number = random_number(1, 100);
-  // success.textContent = "_____";
   question_mark.textContent = "Guess the correct number";
   let startSubElement = document.querySelector(".start_sub");
   let startElement = document.querySelector(".start");
@@ -60,4 +60,7 @@ function submit() {
 }
 function reset() {
   location.reload();
+}
+function home() {
+  window.location.href = "index.html";
 }
