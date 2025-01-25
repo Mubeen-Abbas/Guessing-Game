@@ -73,6 +73,14 @@
 .success {
   border: 2px solid black;
 }
+.input_index {
+  width: 35%;
+  text-align: center;
+  background-color: lightblue;
+}
+.submit_index {
+  background-color: lightgreen;
+}
 /* main Game ends here */
 /* instruct starts here */
 .heading_instruct {
