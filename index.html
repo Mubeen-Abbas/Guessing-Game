@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guessing Game</title>
     <link rel="icon" href="pngegg.png" type="image/x-icon" />
-    <title>Intro of Guessing Game</title>
   </head>
   <body>
-    <section class="main_instruct">
-      <div class="heading_instruct">
-        <h1>Welcome To Guessing Game</h1>
-      </div>
-      <div class="content_instruct">
-        <ol>
-          <h2>Rules of the game are as follows:</h2>
-
-          <h3>
-          <li>
-              A random number would be generated on clicking the start button
-         </h3>
-          </li>
-          <h3>
-          <li>You have 10 tries to guess the number</li></h3>
-          <h3>
-          <li>10 points will be deducted on each wrong try</li></h3>
-          <h3>
-          <li>Click on the start button to start the game</li></h3>
-          <p>*while guessing a number returning to this page  will cause to reseting the number tobe guessed ,score and value which you enterd</p>
-        </ol>
-        <a href="game.html" class="button_instruct"
-          ><button>Click to start the game</button></a
-        >
+    <section class="top_index">
+      <div class="main_index">
+        <h1 class="heading_index">Guessing Game</h1>
+        <button onclick="restart()" class="start">Start</button>
+        <button class="rules_top" onclick="home()">Rules</button>
+        <button onclick="reset()" class="reset">Reset</button>
+        <audio id="gameAudio" src="sound_effect.mp3" type="audio/mpeg"></audio>
+        <audio id="successAudio" src="success.mp3" type="audio/mpeg"></audio>
+        <audio id="failAudio" src="fail.mp3" type="audio/mpeg"></audio>
+        <h2 class="question_mark">?</h2>
       </div>
     </section>
+    <section class="bottom_index">
+      <div class="bottom_left_index">
+        <input
+          type="text"
+          placeholder="Enter any number"
+          class="input_index"
+        />
+        <button onclick="submit()" class="submit_index">Submit</button>
+      </div>
+      <div class="bottom_right_index">
+        <h2>
+          Success:
+          <span class="success">click start to play</span>
+        </h2>
+
+        <h2>Score:<span class="score">100</span></h2>
+      </div>
+      <div class="lastest">
+        <button onclick="restart()" class="start_sub">Start</button>
+        <button class="rules" onclick="home()">Rules</button>
+        <button onclick="reset()" class="reset_sub">Reset</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
