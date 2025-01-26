@@ -30,7 +30,7 @@ function restart() {
   startSubElement.style.color = "gray";
   startSubElement.textContent = "Game In Progress";
 
-   gameAudio.play();
+  gameAudio.play();
 }
 
 function submit() {
