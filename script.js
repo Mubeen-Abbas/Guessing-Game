@@ -16,6 +16,7 @@ let guessing_number;
 submit_index.style.pointerEvents = "auto";
 let startSubElement = document.querySelector(".start_sub");
 let startElement = document.querySelector(".start");
+
 function restart() {
   success.textContent = "Frequency";
   guessing_number = random_number(1, 100);
@@ -29,6 +30,20 @@ function restart() {
   startSubElement.style.backgroundColor = "lightgray";
   startSubElement.style.color = "gray";
   startSubElement.textContent = "Game In Progress";
+
+  // Request fullscreen mode
+  if (document.documentElement.requestFullscreen) {
+    document.documentElement.requestFullscreen();
+  } else if (document.documentElement.mozRequestFullScreen) {
+    // Firefox
+    document.documentElement.mozRequestFullScreen();
+  } else if (document.documentElement.webkitRequestFullscreen) {
+    // Chrome, Safari and Opera
+    document.documentElement.webkitRequestFullscreen();
+  } else if (document.documentElement.msRequestFullscreen) {
+    // IE/Edge
+    document.documentElement.msRequestFullscreen();
+  }
 
   gameAudio.play();
 }
@@ -70,4 +85,8 @@ function reset() {
 }
 function home() {
   window.location.href = "index.html";
+}
+
+function pagechange() {
+  window.location.href = "game.html";
 }
